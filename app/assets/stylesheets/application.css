@@ -1,11 +1,12 @@
 html {
-  font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
-	font-size: 14px;
+  font-family: 'Amatic SC', cursive;
+	font-size: 20px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 400;
 	line-height: 20px;
-  background-color: #fafafa;
+  background-color: #d3d3d3;
+
  }
 
  #nav {
@@ -18,6 +19,7 @@ html {
     background-color: white;
     height: 120px;
     border-bottom: 1px solid gainsboro;
+    background-color:#b0e0e6;
   }
 
 
@@ -30,11 +32,17 @@ html {
    margin-top: 130px;
  }
 
+ .deleting {
+   /*height: 418px;*/
+   text-align: center;
+
+ }
+
  .each-picture {
    margin: auto;
    margin-top: 25px;
    /*height: 418px;*/
-   height: 420px;
+   height: 550px;
    width: 310px;
    text-align: center;
    background-color: white;
@@ -42,6 +50,9 @@ html {
  }
 
  #title {
-   font-family: "Book Antiqua",Palatino,"Palatino Linotype","Palatino LT STD",Georgia,serif
-   font-size: 20px;
+
+   font-size: 30px;
+   font-family: 'Amatic SC', cursive;
+
+
  }

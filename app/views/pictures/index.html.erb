@@ -1,3 +1,5 @@
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Architects+Daughter|Dosis" rel="stylesheet">
+
 <div class='content'>
   <% if @pictures.any? %>
   <% @pictures.each do |picture| %>
@@ -5,10 +7,11 @@
     <h2> <%= link_to picture.caption, picture_path(picture) %>  </h2>
 
     <p>  <%= image_tag picture.image.url(:medium) %></p>
-    <p> <h2><%= link_to "🙌", picture_likes_path(picture), class: 'likes-link'%>
+    <p> <h2><%= link_to "🌊", picture_likes_path(picture), class: 'likes-link'%>
 
       <span class='likes_count'><%= picture.likes.count %></span> <%= 'like'.pluralize(picture.likes.count) %> </p>
-    <p>  <h4><%= link_to "Comment on #{picture.caption}", new_picture_comment_path(picture)%> </p>
+    <p>  <h4><%= link_to "Say something about this #{picture.caption}", new_picture_comment_path(picture)%> </p>
+
     <p>  <%= link_to "Delete #{picture.caption}", picture_path(picture), method: :delete %> </p></h4>
 
       </div>
@@ -17,5 +20,8 @@
 <% else %>
 <p>  No pictures yet </p>
 <% end %>
-<p> <a href='pictures/new'>Add a picture</a> </p>
+<div class="addpic">
+<p> <a href='pictures/new'>Add something 🐓💦🌕</a> </p>
+</div>
+
 </div>

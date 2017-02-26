@@ -13,7 +13,7 @@ def create
     if @comment.errors[:user]
       # Note: if you have correctly disabled the review button where appropriate,
       # this should never happen...
-      redirect_to pictures_path, alert: 'You have already commented on this picture'
+      redirect_to pictures_path, alert: 'You have already commented on this 💥'
     else
       # Why would we render new again?  What else could cause an error?
       render :new

@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>InstagramChallenge</title>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Architects+Daughter|Dosis" rel="stylesheet">
+
+    <title>🙈 Nylon 🌝</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -10,12 +12,12 @@
 
   <body>
   <div id='nav'>
-    <div id='title'><h1 style="font-style:italic;">INSTAGRAM</h1></div>
+    <div id='title'><h1 style="font-style:italic;">🙈 Nylon 🌝</h1></div>
     <% if user_signed_in? %>
-      <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+      <%= link_to "Get outta here", destroy_user_session_path, method: :delete %>
     <% else %>
-      <%= link_to "Sign in", new_user_session_path %>
-      <%= link_to "Sign up", new_user_registration_path %>
+      <%= link_to "Log me in, baby", new_user_session_path %>
+      <%= link_to "Sign me up gooood", new_user_registration_path %>
   <% end %>
     <%= notice %>
   </div>

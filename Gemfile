@@ -12,7 +12,7 @@ group :test do
   gem 'rspec-collection_matchers'
 end
 
-
+gem 'aws-sdk', '~> 2'
 gem 'paperclip'
 gem 'devise'
 gem 'poltergeist'

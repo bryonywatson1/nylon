@@ -84,6 +84,13 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
+  config.paperclip_defaults = {
+  :storage => :s3,
+  :bucket => 'nylongram-assets'
+}
+
+
+
   Paperclip.options[:image_magick_path] = "/opt/ImageMagick/bin"
 Paperclip.options[:command_path] = "/opt/ImageMagick/bin"
 end
